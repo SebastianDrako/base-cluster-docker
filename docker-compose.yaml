@@ -1,0 +1,16 @@
+services:
+  servidor1:
+    build: ./leap_base
+    container_name: servidor1
+
+    volumes:
+      - servidor1-home-disco:/home
+      - servidor1-etc-disco:/etc
+      - servidor1-var-disco:/var
+      - servidor1-bin-disco:/bin
+
+volumes:
+  servidor1-home-disco: {}
+  servidor1-etc-disco: {}
+  servidor1-var-disco: {}
+  servidor1-bin-disco: {}
