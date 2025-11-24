@@ -1,7 +1,7 @@
 FROM opensuse/leap:15.6
 RUN zypper ref && \
     zypper --non-interactive dup && \
-    zypper --non-interactive install man tar file sudo gzip tree git && \
+    zypper --non-interactive install man tar file sudo gzip tree git gh && \
     zypper clean --all
 
 RUN echo "root:contraroot" | chpasswd
